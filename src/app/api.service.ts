@@ -9,6 +9,10 @@ export class ApiService {
   constructor(private http:HttpClient) { }
   fetchProduct=()=>
   {
-    return this.http.get("https://fakestoreapi.com/products")
+    return this.http.get("https://fakestoreapi.com/products");
+  }
+  fetchNews=()=>
+  {
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=9b6ac262eea44bcbbf80ae1b064f631d");
   }
 }
